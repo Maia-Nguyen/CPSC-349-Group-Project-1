@@ -1,0 +1,126 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    background-color: dodgerblue;
+    height: 5%;
+}
+
+.navbar-brand {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    top: 10px;
+    left: 20px;
+    font-size: 18px;
+}
+
+.navbar-nav {
+    margin-top: -21px;
+    list-style-type: none;
+    z-index: -1;
+}
+
+.nav-item {
+    padding: 10px;
+    top: 10px;
+    display: inline-block;
+}
+
+.nav-item, .nav-link {
+    position: relative;
+    float: right;
+    color: white;
+    top: 2px;
+    right: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-nav {
+    color: white;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 80px;
+}
+
+p {
+    position: absolute;
+    justify-content: center; 
+    font-size: 50px;
+    color: dodgerblue;
+    top: 100px;
+}
+
+.sub-heading {
+    margin: 12% 20%;
+    left: 8%;
+}
+
+.page-break {
+    height: 5px;
+    width: 60%;
+    margin-top: 14%;
+    align-items: center;
+    background-color: dodgerblue;
+    border-radius: 10px;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: -16px;
+}
+
+footer ul{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+    background-color: dodgerblue;
+    padding: 10px;
+}
+
+footer ul li {
+    margin:  5px 10px;
+}
+
+li .ft-right {
+    float: right;
+}
+
+.active {
+    background-color: white;
+    color: dodgerblue;
+    padding: 12px;
+    margin-top: -13px;
+}
+
+.backgroud-txt {
+    height: 100px;
+    width: 100px;
+    background-color: dodgerblue;
+    opacity: 0.6;
+}
+
+.text-bckgrd {
+    background-color: white;
+    
+}
+
+.mini-nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+  
+  
+  
