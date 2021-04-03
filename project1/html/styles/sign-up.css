@@ -4,12 +4,17 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+i {
+    color: dodgerblue;
+}
+
 img {
     position: relative;
     justify-content: center;
     height: 180px;
     width: 180px;
     top: 14%;
+    background-color: dodgerblue;
 }
 
 label .pictureLabel {
@@ -20,20 +25,17 @@ label .pictureLabel {
     position: absolute;
     width: 100%;
     background-color: dodgerblue;
-    height: 5%;
 }
   
 .navbar-brand {
-    position: relative;
     color: white;
     text-decoration: none;
-    top: 10px;
-    left: 20px;
+    margin-left: 20px;
     font-size: 18px;
 }
   
 .navbar-nav {
-    margin-top: -18px;
+    /* margin-top: -18px; */
     list-style-type: none;
     z-index: -1;
 }
@@ -47,8 +49,7 @@ label .pictureLabel {
 .nav-item .nav-btns {
     position: relative;
     float: right;
-    color: dodgerblue;
-    top: -10px;
+    color: white;
     right: 10px;
     text-decoration: none;
     font-size: 18px;
@@ -107,12 +108,12 @@ button:hover {
     -webkit-box-shadow: 0px 12px 4px -11px rgba(178,15,15,0.53); 
 }
   
-footer {
+footer {    
     position: absolute;
+    flex-direction: column;
     text-align: center;
     width: 100%;
-    bottom: -740px;
-    margin-top: auto;
+    bottom: -760px;
 }
   
 footer ul{
