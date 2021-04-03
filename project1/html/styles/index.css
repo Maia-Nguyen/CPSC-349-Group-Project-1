@@ -2,13 +2,14 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar {
   position: absolute;
   width: 100%;
   background-color: dodgerblue;
-  height: 5%;
 }
 
 .navbar-brand {
@@ -100,9 +101,9 @@ button:hover {
 
 footer {
   position: absolute;
-  text-align: center;
+  flex-direction: column;
   width: 100%;
-  bottom: -16px;
+  bottom: -252%;
 }
 
 footer ul{
@@ -113,12 +114,10 @@ footer ul{
   padding: 10px;
 }
 
-
 footer ul li {
   margin:  5px 10px;
   float: right;
 }
-
 
 li .ft-right {
   float: right;
@@ -128,5 +127,3 @@ li .ft-right {
   text-decoration: none;
   color: white;
 }
-
-
