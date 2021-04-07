@@ -31,6 +31,47 @@ function writeUserData(userId, name, email, description) {
   });
 }
 
+// Delete data
+function deleteData(userId){
+  firebase.database().ref('users/' + userId).remove().then(function(){
+    console.log('delete sucessfully');
+  })
+  .catch(function(error){
+    window.alert(error.message);
+  });
+}
+function deletePicture(userId){
+  var storage = firebase.storage();
+  var pathReference = storage.ref('users/' + user.uid + '/profile.jpg');
+    // Delete the file
+  pathReference.delete().then(function(){
+    // File deleted successfully
+    console.log("delete sucessfully")
+  }).catch(function(error){
+    window.alert(error.message);
+    // Uh-oh, an error occurred!
+  });
+}
+
+// This function will call delete data and delete picture above
+// Call this function before you remove user in authentication
+function delete_user_data(){
+  var user = firebase.auth().currentUser;
+  // var credential;
+  // user.reauthenticateWithCredential(credential).then(function() {
+  //   console.log('please sign in again')
+  //   // User re-authenticated.
+  // }).catch(function(error) {
+  //   // An error happened.
+  // });
+  deleteData(user.uid);
+  deletePicture(user.uid);
+}
+
+
+
+
+
 // show user information
 // for debug purpose
 function Authentication_checking(){
@@ -103,6 +144,9 @@ function createAccount(){
   firebase.storage().ref('users/' + user.uid + '/profile.jpg').put(file).then(function(){
     console.log("sucessfully uploaded piture");
   })
+  .then(function(){
+    window.location.href = 'result.html';
+  })
   .catch(function(error){
     window.alert("Error: " + error.message);
   });
@@ -110,6 +154,7 @@ function createAccount(){
   
   // store bio, it call writeUser data function above
   writeUserData(user.uid, name, email, description);
+  // window.location.href = 'result.html';
 })
 .catch(function(error){
   var errorCode = error.code;
@@ -131,3 +176,4 @@ function signOut(){
     // An error happened.
   });
 }
+
