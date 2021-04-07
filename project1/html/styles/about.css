@@ -103,7 +103,7 @@ li .ft-right {
 .backgroud-txt {
     position: relative;
     display: flex;
-    height: 600px;
+    height: 400px;
     overflow: auto;
     width: 55%;
     background-color: dodgerblue;
