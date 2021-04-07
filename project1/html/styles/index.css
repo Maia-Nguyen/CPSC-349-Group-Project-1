@@ -50,16 +50,16 @@ body {
 .content {
   position: relative;
   display: flex;
-  justify-content: center;
-  top: 80px;
+  flex-direction: column;
+  align-items: center;
+  top: 300px;
 }
 
 p {
-  position: absolute;
+  position: relative;
   justify-content: center; 
   font-size: 50px;
   color: dodgerblue;
-  top: 100px;
 }
 
 .sub-heading {
@@ -70,14 +70,14 @@ p {
 .page-break {
   height: 5px;
   width: 60%;
-  margin-top: 14%;
   align-items: center;
   background-color: dodgerblue;
   border-radius: 10px;
 }
 
 button {
-  position: absolute;
+  display: block;
+  position: relative;
   border: 2px solid red;
   border-radius: 4px;
   background-color: white;
@@ -86,7 +86,6 @@ button {
   font-size: 20px;
   padding: 20px 10px;
   cursor: pointer;
-  margin-top: 25%;
   outline: none;
 }
 

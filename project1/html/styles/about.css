@@ -17,7 +17,7 @@ body {
     text-decoration: none;
     top: 10px;
     left: 20px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .navbar-nav {
@@ -49,21 +49,16 @@ body {
 .content {
     position: relative;
     display: flex;
-    justify-content: center;
-    top: 40px;
-}
-
-p {
-    position: absolute;
-    justify-content: center; 
-    font-size: 50px;
-    color: dodgerblue;
+    flex-direction: column;
+    align-items: center;
     top: 100px;
 }
 
-.sub-heading {
-    margin: 12% 20%;
-    left: 8%;
+p {
+    position: relative;
+    justify-content: center; 
+    font-size: 50px;
+    color: dodgerblue;
 }
 
 .page-break {
@@ -106,34 +101,21 @@ li .ft-right {
 }
 
 .backgroud-txt {
-    position: absolute;
+    position: relative;
     display: flex;
-    height: 150%;
+    height: 600px;
+    overflow: auto;
     width: 55%;
     background-color: dodgerblue;
     opacity: 0.6;
-    align-content: center;
-    justify-content: center;
-    top: 120%;
     border-radius: 4px;
 }
 
-.text-bckgrd {
-    background-color: white;
-    position: relative;
-}
-
 .sub-heading {
-    display: flex;
-    position: absolute;
     color: white;
-    font-size: 20px;
-    word-wrap: normal;
-    align-items: center;
-    top: 17%;
-    left: 90px;
-    width: 50%;
-    font-size: 30px;
+    font-size: 28px;
+    position: absolute;
+    padding: 5% 5%;
 }
 
 .mini-nav ul li a {
