@@ -109,6 +109,7 @@ img {
     width: 50%;
     height: 250px;
     justify-content: center;
+    overflow: auto;
 }
   
 p {
@@ -124,6 +125,7 @@ p {
     left: 20px;
 
     font-size: 25px;
+    padding: 2% 2%;
 }
 
 hr {
