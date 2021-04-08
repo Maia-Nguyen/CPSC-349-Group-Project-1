@@ -42,7 +42,7 @@ function deleteData(userId){
 }
 function deletePicture(userId){
   var storage = firebase.storage();
-  var pathReference = storage.ref('users/' + user.uid + '/profile.jpg');
+  var pathReference = storage.ref('users/' + userId + '/profile.jpg');
     // Delete the file
   pathReference.delete().then(function(){
     // File deleted successfully
