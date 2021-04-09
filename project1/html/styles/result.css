@@ -8,7 +8,7 @@ body {
     position: absolute;
     width: 100%;
     background-color: dodgerblue;
-    height: 5%;
+    padding: 10px;
 }
   
 .navbar-brand {

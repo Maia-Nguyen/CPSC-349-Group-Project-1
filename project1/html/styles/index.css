@@ -9,6 +9,7 @@ body {
 .navbar {
   position: absolute;
   width: 100%;
+  padding: 10px;
   background-color: dodgerblue;
 }
 
@@ -78,24 +79,25 @@ p {
 button {
   display: block;
   position: relative;
-  border: 2px solid red;
+  border: 2px solid #ff9e7bcc;
   border-radius: 4px;
   background-color: white;
-  color: red;
+  color: #ff7f50;
   width: 20%;
   font-size: 20px;
+  font-weight: bold;
   padding: 20px 10px;
   cursor: pointer;
   outline: none;
 }
 
 button:hover {
-  border: 2px solid red;
+  border: 2px solid #ff9e7bcc;
   color: white;
-  background-color: red;
+  font-weight: bold;
+  background-color: #ff9e7bcc;
   transition: ease-in-out 0.5s;
-  box-shadow: 0px 12px 4px -11px rgba(178,15,15,0.53); 
-  -webkit-box-shadow: 0px 12px 4px -11px rgba(178,15,15,0.53); 
+  box-shadow: 0px 12px 4px -11px #ff9e7bcc; 
 }
 
 footer {

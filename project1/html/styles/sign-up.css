@@ -88,32 +88,35 @@ p {
     border-radius: 10px;
 }
   
-button {
-    justify-content: center;
-    border-radius: 4px;
+.createBtn {
+    display: flex;
     background-color: white;
-    width: 20%;
+    color: #ff9e7bcc;
     font-size: 20px;
-    padding: 20px 10px;
-    cursor: pointer;
-    margin-top: 25%;
+    font-weight: bold;
+    padding: 8px;
+    width: 300px;
+    align-content: center;
+    border: 1px solid #ff9e7bcc;
+    border-radius: 4px;
+    text-decoration: none;
 }
-  
-button:hover {
-    border: 2px solid red;
+
+.createBtn:hover {
+    border: 2px solid #ff9e7bcc;
     color: white;
-    background-color: red;
+    font-weight: bold;
+    background-color: #ff9e7bcc;
     transition: ease-in-out 0.5s;
-    box-shadow: 0px 12px 4px -11px rgba(178,15,15,0.53); 
-    -webkit-box-shadow: 0px 12px 4px -11px rgba(178,15,15,0.53); 
-}
+    box-shadow: 0px 12px 4px -11px #ff9e7bcc; 
+  }
   
 footer {    
     position: absolute;
     flex-direction: column;
     text-align: center;
     width: 100%;
-    bottom: -760px;
+    bottom: -100px;
 }
   
 footer ul{
@@ -186,23 +189,7 @@ input {
     text-decoration: underline;
 }
 
-.controls .button {
-    display: flex;
-    background-color: white;
-    color: dodgerblue;
-    font-size: 20px;
-    padding: 8px;
-    width: 300px;
-    align-content: center;
-    border: 1px solid dodgerblue;
-    border-radius: 4px;
-    text-decoration: none;
-}
 
-.controls .button:hover {
-    background-color: dodgerblue;
-    color: white;
-}
 
 .controls .networks {
     width: 500px;
@@ -221,5 +208,8 @@ textarea {
     outline: none;
     color: dodgerblue;
     padding: 10px;
+    min-height: 200px;
+    max-height: 200px;
+    overflow-y: scroll;
 }
   
