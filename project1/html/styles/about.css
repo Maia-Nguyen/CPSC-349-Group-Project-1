@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
+    min-height: 1800px;
 }
 
 .navbar {
@@ -52,7 +53,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 300px;
+    top: 200px;
 }
 
 p {
@@ -69,25 +70,6 @@ p {
     align-items: center;
     background-color: dodgerblue;
     border-radius: 10px;
-}
-
-footer {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    bottom: -16px;
-}
-
-footer ul{
-    list-style-type: none;
-    display: flex;
-    align-items: flex-end;
-    background-color: dodgerblue;
-    padding: 10px;
-}
-
-footer ul li {
-    margin:  5px 10px;
 }
 
 li .ft-right {
@@ -124,5 +106,24 @@ li .ft-right {
     color: white;
 }
   
-  
+footer {
+    position: fixed;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    bottom: -17px;
+    left: 0;
+}
+
+footer ul{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+    background-color: dodgerblue;
+    padding: 10px;
+}
+
+footer ul li {
+    margin:  5px 10px;
+}
   

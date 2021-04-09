@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
+    min-height: 1800px;
 }
   
 .navbar {
@@ -170,10 +171,12 @@ hr {
 
 /* footer */
 footer {
-    position: absolute;
+    position: fixed;
+    flex-direction: column;
     text-align: center;
     width: 100%;
-    bottom: -16px;
+    bottom: -17px;
+    left: 0;
 }
   
 footer ul{

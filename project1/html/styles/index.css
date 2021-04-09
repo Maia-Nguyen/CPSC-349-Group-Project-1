@@ -2,8 +2,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
-  position: fixed;
   width: 100%;
+  min-height: 1800px;
 }
 
 .navbar {
@@ -101,10 +101,12 @@ button:hover {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   flex-direction: column;
+  text-align: center;
   width: 100%;
-  bottom: -252%;
+  bottom: -17px;
+  left: 0;
 }
 
 footer ul{
