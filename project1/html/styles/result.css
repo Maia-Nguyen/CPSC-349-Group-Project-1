@@ -93,25 +93,28 @@ img {
 }
 
 .content .users-name {
-    margin-top: -260px;
+    margin-top: -280px;
     font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(30, 143, 255, 0.534);
 }
 
 .user-profile {
     position: absolute;
     justify-content: center;
+    margin-top: -40px;
     width: 1250px;
     height: 250px;
 }
 .network-content {
-    margin-top: -55px;
+    margin-top: -70px;
 }
 
 .network-text {
     position: relative;
     text-decoration: none;
     left: 25%;
-    background-color: #ffad90;
+    background-color: #ff9e7bcc;
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -137,11 +140,12 @@ img {
     height: auto;
     overflow: auto;
     padding: 15px 30px;
-    margin-top: -65px;
+    margin-top: -70px;
     border-radius: 5px;
     font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
-    background-color: lightgrey;
+    background-color: rgba(30, 143, 255, 0.534);
 }
 
 p {
@@ -155,8 +159,9 @@ p {
 
 hr {
     position: absolute;
-    height: 4px;
-    background-color: dodgerblue;
+    height: 5px;
+    background-color: rgba(30, 143, 255, 0.712);
+    border: none;
     border-radius: 4px;
     width: 80%;
     left: 10%;
