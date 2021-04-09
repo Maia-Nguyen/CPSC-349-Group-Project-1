@@ -1,0 +1,196 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+  
+.navbar {
+    position: absolute;
+    width: 100%;
+    background-color: dodgerblue;
+    height: 5%;
+}
+  
+.navbar-brand {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    left: 20px;
+    font-size: 18px;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 80px;
+}
+
+img {
+    position: relative;
+    top: 200px;
+    background-color: dodgerblue;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: none;
+    justify-content: center;
+}
+  
+p {
+    position: absolute;
+    justify-content: center; 
+    font-size: 50px;
+    color: dodgerblue;
+    top: 100px;
+}
+  
+.sub-heading {
+    margin: 12% 20%;
+    left: 8%;
+}
+  
+.page-break {
+    height: 5px;
+    width: 60%;
+    margin-top: 14%;
+    align-items: center;
+    background-color: dodgerblue;
+    border-radius: 10px;
+}
+  
+button {
+    justify-content: center;
+    border-radius: 4px;
+    background-color: white;
+    width: 20%;
+    font-size: 20px;
+    padding: 20px 10px;
+    cursor: pointer;
+    margin-top: 25%;
+}
+  
+button:hover {
+    border: 2px solid red;
+    color: white;
+    background-color: red;
+    transition: ease-in-out 0.5s;
+    box-shadow: 0px 12px 4px -11px rgba(178,15,15,0.53); 
+    -webkit-box-shadow: 0px 12px 4px -11px rgba(178,15,15,0.53); 
+}
+  
+footer {    
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    bottom: -760px;
+}
+  
+footer ul{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+    background-color: dodgerblue;
+    padding: 10px;
+}
+  
+footer ul li {
+    margin:  5px 10px;
+    float: right;
+}
+
+li .ft-right {
+    float: right;
+}
+
+.mini-nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.form-horizontal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 684px;
+    height: 1450px;
+    background-color: #F3EDED;
+    left: 34%;
+    margin-top: 3%;
+    border-radius: 4px;
+}
+
+.form-horizontal p {
+    color: dodgerblue;
+}
+
+.control-group {
+    position: relative;
+    margin: 20px;
+    top: 15%;
+}
+
+.control-group .control-label {
+    color: dodgerblue;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-left: -10px;
+}
+
+input {
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    color: dodgerblue;
+    width: 500px;
+    outline: none;
+}
+
+.controls .create-Act {
+    margin-left: 90px;
+    text-decoration: none;
+}
+
+.controls .create-Act:hover {
+    margin-left: 90px;
+    text-decoration: underline;
+}
+
+.controls .button {
+    display: flex;
+    background-color: white;
+    color: dodgerblue;
+    font-size: 20px;
+    padding: 8px;
+    width: 300px;
+    align-content: center;
+    border: 1px solid dodgerblue;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.controls .button:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.networks {
+    width: 500px;
+    outline: none;
+    padding: 10px;
+    color: dodgerblue;
+}
+
+.control-group .tellme {
+    margin-left: 50px;
+}
+
+textarea {
+    border: 1px solid dodgerblue;
+    outline: none;
+    color: dodgerblue;
+    padding: 10px;
+}
+  
