@@ -97,21 +97,53 @@ img {
     font-size: 36px;
 }
 
-.content .network-content .network-lists .network-text {
-    margin-top: -200px;
-    margin-left: -40px;
+.user-profile {
+    position: absolute;
+    justify-content: center;
+    width: 1250px;
+    height: 250px;
+}
+.network-content {
+    margin-top: -55px;
 }
 
-.content .usersBio {
+.network-text {
+    position: relative;
+    text-decoration: none;
+    left: 25%;
+    background-color: #ffad90;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 15px 32px;
+    border-radius: 9px;
+    margin: 10px 7px;
+    border: none;
+}
+
+.bio-content {
+    position: relative;
+    height: 400px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.bioTxt {
     position: absolute;
     display: flex;
-    background-color: #F3EDED;
-    width: 50%;
-    height: 250px;
-    justify-content: center;
+    width: auto;
+    height: auto;
     overflow: auto;
+    padding: 15px 30px;
+    margin-top: -65px;
+    border-radius: 5px;
+    font-size: 30px;
+    color: white;
+    background-color: lightgrey;
 }
-  
+
 p {
     position: absolute;
     justify-content: center; 
@@ -120,13 +152,6 @@ p {
     top: 100px;
 }
 
-.content .usersBio .bioTxt {
-    top: -5px;
-    left: 20px;
-
-    font-size: 25px;
-    padding: 2% 2%;
-}
 
 hr {
     position: absolute;
