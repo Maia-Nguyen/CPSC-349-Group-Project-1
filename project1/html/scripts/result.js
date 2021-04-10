@@ -38,5 +38,27 @@
         // No user is signed in.
         console.log('No user is currently logged in');
       }
+
+      // Get social media link--------------------------------------------------------------------
+      
+      // make reference to storages
+      var firebase_facebook = firebase.database().ref('users/' + user.uid + '/facebook');
+      var firebase_github = firebase.database().ref('users/' + user.uid + '/github');
+      var firebase_instagram = firebase.database().ref('users/' + user.uid + '/instagram');
+      var firebase_twitter = firebase.database().ref('users/' + user.uid + '/twitter');
+
+      // this here is to change the links
+      firebase_facebook.on('value', function(snapshot){
+        document.getElementById("facebook").href = snapshot.val();
+       });
+       firebase_github.on('value', function(snapshot){
+        document.getElementById("github").href = snapshot.val();
+       });
+       firebase_instagram.on('value', function(snapshot){
+        document.getElementById("instagram").href = snapshot.val();
+       });
+       firebase_twitter.on('value', function(snapshot){
+        document.getElementById("twitter").href = snapshot.val();
+       });
   });
 })();
