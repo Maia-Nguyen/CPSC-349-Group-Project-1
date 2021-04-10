@@ -177,3 +177,30 @@ function signOut(){
   });
 }
 
+// Update social media----------------------------------------------
+function updateSocialMedia(userId,github_link, twitter_link, facebook_link, instagram_link){
+  firebase.database().ref('users/' + userId).update({
+    github: github_link,
+    twitter: twitter_link,
+    facebook: facebook_link,
+    instagram: instagram_link
+  });
+}
+
+// NOT FINISHED, IT ONLY UPDATE THE USER SOCIAL MEDIA LINKS
+function updateProfile(){
+  var github = document.getElementById('github').value;
+  var twitter = document.getElementById('twitter').value;
+  var facebook = document.getElementById('facebook').value;
+  var instagram = document.getElementById('instagram').value;
+
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      updateSocialMedia(user.uid, github, twitter, facebook, instagram);
+    } 
+    else {
+      // No user is signed in.
+      console.log('No user is currently logged in');
+    }
+  });
+}
