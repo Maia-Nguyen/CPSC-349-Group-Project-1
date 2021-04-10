@@ -16,7 +16,7 @@
         <!-- Brand/logo -->
         <a class="navbar-brand" href="result.html">Get To Know Me</a>
     </nav>
-    <form class="form-horizontal">
+    <form id='form' class="form-horizontal">
         <p>Edit Profile</p>
         <img src="" alt="" id="user_profile_pic">
         <!-- <div class="control-group">
@@ -34,16 +34,16 @@
         <div class="control-group">
             <label class="control-label" for="inputPassword">Link Your Networks</label>
             <div class="networks">
-                <input type="text" id="" placeholder="GitHub">
+                <input type="text" id="github" placeholder="GitHub">
             </div>
             <div class="networks">
-                <input type="text" id="" placeholder="Twitter">
+                <input type="text" id="twitter" placeholder="Twitter">
             </div>
             <div class="networks">
-                <input type="text" id="" placeholder="Facebook">
+                <input type="text" id="facebook" placeholder="Facebook">
             </div>
             <div class="networks">
-                <input type="text" id="" placeholder="Instagram">
+                <input type="text" id="instagram" placeholder="Instagram">
             </div>
         </div>
         <div class="control-group"> 
@@ -66,7 +66,7 @@
             <div class="controls">
                 <form>
                     <!-- Save changes to account -->
-                    <input class ="Btn" type="button" onclick="" value="Save Changes"/>
+                    <input class ="Btn" type="button" onclick="updateProfile()" value="Save Changes"/>
                 </form>
             </div>  
         </div>
