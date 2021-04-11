@@ -56,7 +56,7 @@
             <div class="controls">
                 <!-- Profile Box -->
                 <!-- <input type ="file" onchange="uploadfile(this.file)"> -->
-                <input type="file" id="myfile" name="myfile" onchange="chooseFile(event)"><br><br>
+                <input type="file" id="myfile" name="myfile" onchange="chooseFile(event)" required><br><br>
                <!-- <hr>
                  <img id="imgUpload" src="" width="100vw"> -->
             </div>
@@ -64,13 +64,13 @@
         <div class="control-group">
             <label class="control-label tellme" for="inputText">Tell Us Something About You!</label>
             <div class="controls">
-                <textarea name="" id="inputDescription" cols="60" rows="5"></textarea>
+                <textarea name="" id="inputDescription" cols="60" rows="4" required></textarea>
             </div>
         </div>
         <div class="control-group">
             <div class="controls">
                 <form>
-                    <input class ="createBtn" type="button" onclick="createAccount()" value="Create Account"/>
+                    <input class ="createBtn" type="submit" onclick="createAccount()" value="Create Account"/>
                 </form>
             </div>  
         </div>

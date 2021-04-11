@@ -10,7 +10,7 @@ body {
   position: absolute;
   width: 100%;
   padding: 10px;
-  background-color: dodgerblue;
+  background-color: rgb(26, 26, 26);
 }
 
 .navbar-brand {
@@ -59,8 +59,12 @@ body {
 p {
   position: relative;
   justify-content: center; 
-  font-size: 50px;
-  color: dodgerblue;
+  font-size: 45px;
+  color: rgb(26, 26, 26);
+}
+.subtitle {
+  font-size: 40px;
+  top: -50px;
 }
 
 .sub-heading {
@@ -72,17 +76,17 @@ p {
   height: 5px;
   width: 60%;
   align-items: center;
-  background-color: dodgerblue;
+  background-color: rgba(66, 161, 255, 0.534);
   border-radius: 10px;
 }
 
 button {
   display: block;
   position: relative;
-  border: 2px solid #ff9e7bcc;
+  border: 2px solid rgba(66, 161, 255, 0.534);
   border-radius: 4px;
   background-color: white;
-  color: #ff7f50;
+  color: rgba(66, 161, 255, 0.534);
   width: 20%;
   font-size: 20px;
   font-weight: bold;
@@ -92,12 +96,12 @@ button {
 }
 
 button:hover {
-  border: 2px solid #ff9e7bcc;
+  border: 2px solid rgba(66, 161, 255, 0.534);
   color: white;
   font-weight: bold;
-  background-color: #ff9e7bcc;
+  background-color: rgb(155, 205, 255);
   transition: ease-in-out 0.5s;
-  box-shadow: 0px 12px 4px -11px #ff9e7bcc; 
+  box-shadow: 0px 12px 4px -11px rgba(66, 161, 255, 0.534); 
 }
 
 footer {
@@ -113,7 +117,7 @@ footer ul{
   list-style-type: none;
   display: flex;
   align-items: flex-end;
-  background-color: dodgerblue;
+  background-color: rgb(26, 26, 26);
   padding: 10px;
 }
 

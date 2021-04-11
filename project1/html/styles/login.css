@@ -9,7 +9,7 @@ body {
 .navbar {
     position: absolute;
     width: 100%;
-    background-color: dodgerblue;
+    background-color: rgb(26, 26, 26);
     height: 5%;
 }
   
@@ -76,26 +76,25 @@ p {
 }
   
 .Btn {
-    display: flex;
     background-color: white;
-    color: #ff9e7bcc;
+    color: rgba(136, 195, 255, 0.931);
     font-size: 20px;
     font-weight: bold;
     padding: 8px;
     width: 300px;
     align-content: center;
-    border: 1px solid #ff9e7bcc;
+    border: 1px solid rgba(136, 195, 255, 0.931);
     border-radius: 4px;
     text-decoration: none;
 }
 
 .Btn:hover {
-    border: 2px solid #ff9e7bcc;
+    border: 2px solid rgba(136, 195, 255, 0.931);
     color: white;
     font-weight: bold;
-    background-color: #ff9e7bcc;
+    background-color: rgba(136, 195, 255, 0.931);
     transition: ease-in-out 0.5s;
-    box-shadow: 0px 12px 4px -11px #ff9e7bcc; 
+    box-shadow: 0px 12px 4px -11px rgba(136, 195, 255, 0.931); 
 }
  
 li .ft-right {
@@ -121,7 +120,7 @@ li .ft-right {
 }
 
 .form-horizontal p {
-    color: dodgerblue;
+    color: rgb(26, 26, 26);
 }
 
 .control-group {
@@ -131,52 +130,20 @@ li .ft-right {
 }
 
 .control-group .control-label {
-    color: dodgerblue;
+    color: rgb(26, 26, 26);
     font-size: 20px;
     padding: 5px 10px;
     margin-left: -10px;
 }
 
 input {
-    border: 1px solid dodgerblue;
+    border: 1px solid rgb(107, 181, 255);
     padding: 10px;
-    color: dodgerblue;
+    color: rgb(107, 181, 255);
     width: 500px;
     outline: none;
     /* border-radius: 4px; */
 }
-
-.controls .create-Act {
-    margin-left: 80px;
-    text-decoration: none;
-    height: 5px;
-    background-color: white;
-    padding: 10px;
-    border-radius: 2px;
-}
-
-.controls .create-Act:hover {
-    text-decoration: underline;
-}
-
-.controls .button {
-    display: flex;
-    background-color: white;
-    color: dodgerblue;
-    font-size: 20px;
-    padding: 8px;
-    width: 300px;
-    align-content: center;
-    border: 1px solid dodgerblue;
-    border-radius: 4px;
-    text-decoration: none;
-}
-
-.controls .button:hover {
-    background-color: dodgerblue;
-    color: white;
-}
-
  
 footer {
     position: fixed;
@@ -191,7 +158,7 @@ footer ul{
     list-style-type: none;
     display: flex;
     align-items: flex-end;
-    background-color: dodgerblue;
+    background-color: rgb(26, 26, 26);
     padding: 10px;
 }
   

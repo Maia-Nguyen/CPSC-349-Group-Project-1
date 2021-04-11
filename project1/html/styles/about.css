@@ -10,7 +10,7 @@ body {
     width: 100%;
     height: 40px;
     padding: 10px;
-    background-color: dodgerblue;
+    background-color: rgb(26, 26, 26);
 }
 
 .navbar-brand {
@@ -68,7 +68,7 @@ p {
     width: 60%;
     margin-top: 14%;
     align-items: center;
-    background-color: dodgerblue;
+    background-color: rgb(26, 26, 26);
     border-radius: 10px;
 }
 
@@ -78,7 +78,7 @@ li .ft-right {
 
 .active {
     background-color: white;
-    color: dodgerblue;
+    background-color: rgb(26, 26, 26);
     padding: 12px;
     margin-top: -13px;
 }
@@ -89,7 +89,7 @@ li .ft-right {
     height: 400px;
     overflow: auto;
     width: 55%;
-    background-color: dodgerblue;
+    background-color: rgba(66, 161, 255, 0.931);
     opacity: 0.6;
     border-radius: 4px;
 }
@@ -119,7 +119,7 @@ footer ul{
     list-style-type: none;
     display: flex;
     align-items: flex-end;
-    background-color: dodgerblue;
+    background-color: rgb(26, 26, 26);
     padding: 10px;
 }
 

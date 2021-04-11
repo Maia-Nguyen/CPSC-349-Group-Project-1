@@ -196,7 +196,20 @@ function updateProfile(){
 
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
+      if(!github.includes("github.com")) {
+        github = "https://www.github.com/" + github;
+      }
+      if(!twitter.includes("twitter.com")) {
+        twitter = "https://www.twitter.com/" + twitter;
+      }
+      if(!facebook.includes("facebook.com")) {
+        facebook = "https://www.facebook.com/" + facebook;
+      }
+      if(!instagram.includes("instagram.com")) {
+        instagram = "https://www.instagram.com/" + instagram;
+      }
       updateSocialMedia(user.uid, github, twitter, facebook, instagram);
+      window.location.href = 'result.html';
     } 
     else {
       // No user is signed in.
@@ -204,3 +217,4 @@ function updateProfile(){
     }
   });
 }
+

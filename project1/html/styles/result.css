@@ -8,7 +8,7 @@ body {
 .navbar {
     position: absolute;
     width: 100%;
-    background-color: dodgerblue;
+    background-color: rgb(26, 26, 26);
     padding: 10px;
 }
   
@@ -42,22 +42,6 @@ body {
     font-size: 18px;
 }
 
-.nav-item .dropdown-content {
-    display: flex;
-    background-color: dodgerblue;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    height: 50px;
-    width: 100px;
-}
-
-.nav-item .dropdown-content a {
-    text-decoration: none;
-    display: inline-block; 
-    color: white;
-}
-
 .nav-item .nav-link {
     position: relative;
     color: white;
@@ -76,7 +60,7 @@ body {
 }
 
 img {
-    background-color: dodgerblue;
+    background-color: rgb(26, 26, 26);
     height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -96,8 +80,7 @@ img {
 .content .users-name {
     margin-top: -280px;
     font-size: 36px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgba(30, 143, 255, 0.534);
+    color: rgba(26, 26, 26, 0.349);
 }
 
 .user-profile {
@@ -113,14 +96,15 @@ img {
 
 .network-text {
     position: relative;
+    justify-content: center;
     text-decoration: none;
-    left: 25%;
-    background-color: #ff9e7bcc;
+    left: 27%;
+    background-color: rgba(66, 161, 255, 0.534);
     color: white;
     font-size: 20px;
     font-weight: bold;
     display: inline-block;
-    padding: 15px 32px;
+    padding: 10px 25px;
     border-radius: 9px;
     margin: 10px 7px;
     border: none;
@@ -144,9 +128,7 @@ img {
     margin-top: -70px;
     border-radius: 5px;
     font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    background-color: rgba(30, 143, 255, 0.534);
+    color: rgba(26, 26, 26, 0.349);
 }
 
 p {
@@ -169,6 +151,11 @@ hr {
     top: -80px;
 }
 
+button {
+    position: absolute;
+    justify-content: center;
+}
+
 /* footer */
 footer {
     position: fixed;
@@ -183,7 +170,7 @@ footer ul{
     list-style-type: none;
     display: flex;
     align-items: flex-end;
-    background-color: dodgerblue;
+    background-color: rgb(26, 26, 26);
     padding: 10px;
 }
   
