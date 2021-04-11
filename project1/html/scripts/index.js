@@ -170,8 +170,8 @@ event.preventDefault();
 function signOut(){
   firebase.auth().signOut().then(function() {
     // Sign-out successful.
-    // Once the user sign out, we will redirect them back to main page, which is about.html
-    window.location.href = 'about.html';
+    // Once the user sign out, we will redirect them back to login page, which is login.html
+    window.location.href = 'login.html';
   }).catch(function(error){
     // An error happened.
   });
@@ -196,6 +196,15 @@ function updateProfile(){
 
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
+      // if user did not enter the website url
+      // append the user's input to the end of the url
+      // if user did not enter anything, database will save the value as website url without username (default value)
+
+      // example: user inputs "username" which does not include "github.com", therefore save value as
+      // "https://www.github.com/" + "username"
+      
+      // example2: user enters full url of their profile like "https://github.com/username" 
+      // since user input .includes "github.com" no change to the value is done
       if(!github.includes("github.com")) {
         github = "https://www.github.com/" + github;
       }
