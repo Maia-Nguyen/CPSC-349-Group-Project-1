@@ -68,10 +68,6 @@ function delete_user_data(){
   deletePicture(user.uid);
 }
 
-
-
-
-
 // show user information
 // for debug purpose
 function Authentication_checking(){
@@ -88,7 +84,6 @@ function Authentication_checking(){
     }
   });
 }
-
 
 // Login function------------------------------------------------
 // In login.html, it's linked with signed in button
@@ -136,7 +131,7 @@ function createAccount(){
   var password = document.getElementById("inputPassword").value;
 
   firebase.auth().createUserWithEmailAndPassword(email, password)
-.then(function(userCredential){
+  .then(function(userCredential){
   // Signed in 
   var user = userCredential.user;
 
@@ -178,7 +173,7 @@ function signOut(){
 }
 
 // Update social media----------------------------------------------
-function updateSocialMedia(userId,github_link, twitter_link, facebook_link, instagram_link){
+function updateSocialMedia(userId, github_link, twitter_link, facebook_link, instagram_link){
   firebase.database().ref('users/' + userId).update({
     github: github_link,
     twitter: twitter_link,
@@ -187,12 +182,37 @@ function updateSocialMedia(userId,github_link, twitter_link, facebook_link, inst
   });
 }
 
+function updateUserName(userId, name){
+  if(name != "") {
+    firebase.database().ref('users/' + userId).update({
+      username: name
+    });
+  }
+}
+
+function updateUserBio(userId, bio){
+  if(bio != "") {
+    firebase.database().ref('users/' + userId).update({
+      description: bio
+    });
+  } 
+}
+
+// not working
+function updateUserPic(userId){
+  firebase.storage().ref('users/' + userId + '/profile.jpg').put(file).then(function(){
+    console.log("sucessfully uploaded piture");
+  })
+}
+
 // NOT FINISHED, IT ONLY UPDATE THE USER SOCIAL MEDIA LINKS
 function updateProfile(){
   var github = document.getElementById('github').value;
   var twitter = document.getElementById('twitter').value;
   var facebook = document.getElementById('facebook').value;
   var instagram = document.getElementById('instagram').value;
+  var name = document.getElementById('inputName').value;
+  var bio = document.getElementById('inputDescription').value;
 
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
@@ -218,6 +238,9 @@ function updateProfile(){
         instagram = "https://www.instagram.com/" + instagram;
       }
       updateSocialMedia(user.uid, github, twitter, facebook, instagram);
+      updateUserName(user.uid, name);
+      //updateUserPic(user.uid);
+      updateUserBio(user.uid, bio);
       window.location.href = 'result.html';
     } 
     else {
