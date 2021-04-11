@@ -90,7 +90,8 @@
       console.log('No user is currently logged in');
     }
 
-    // Get social media link--------------------------------------------------------------------
+    // Show social media link--------------------------------------------------------------------
+    // Can't figure this part out -Maia
     function showNetworks(){
       firebase.auth().onAuthStateChanged(function(user) {
     
