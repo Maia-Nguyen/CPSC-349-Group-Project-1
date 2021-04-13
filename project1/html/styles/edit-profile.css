@@ -86,6 +86,24 @@ li .ft-right {
     margin-left: -10px;
 }
 
+.colorGroup {
+    display: flex;
+    justify-content: center;
+    margin-left: -80px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.colorGroup label {
+    color: black;
+    margin-right: 10px;
+}
+
+.colorGroup .colorPicker {
+   
+    width: 20%;
+}
+
 input {
     border: 1px solid rgba(66, 161, 255, 0.931);
     padding: 10px;
