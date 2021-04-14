@@ -45,6 +45,7 @@
       var github_link = document.getElementById('github');
       var twitter_link = document.getElementById('twitter');
       var instagram_link = document.getElementById('instagram');
+      
       // this here is to change the links
       firebase_facebook.on('value', function (snapshot) {
         if(window.location.href.includes("result.html")) {
