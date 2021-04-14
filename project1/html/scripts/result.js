@@ -44,15 +44,15 @@
         }
       })
 
-      // Display saved user profile picture in edit profile
-      firebase.storage().ref('users/' + user.uid + '/profile.jpg')
-      .then(function (url) {
-        var img = document.getElementById('picture-file');
-        img.setAttribute('src', url);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+      // // Display saved user profile picture in edit profile
+      // firebase.storage().ref('users/' + user.uid + '/profile.jpg')
+      // .then(function (url) {
+      //   var img = document.getElementById('picture-file');
+      //   img.setAttribute('src', url);
+      // })
+      // .catch(function (error) {
+      //   console.log(error);
+      // });
 
 
       // Display saved user background color in edit profile
