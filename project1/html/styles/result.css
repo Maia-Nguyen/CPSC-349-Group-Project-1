@@ -2,13 +2,16 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
-    min-height: 1800px;
+    /* min-height: 1800px; */
+    position: fixed;
+    width: 100%;
 }
   
 .navbar {
     position: absolute;
     width: 100%;
     background-color: rgb(26, 26, 26);
+    /* padding: 10px; */
 }
   
 .navbar-brand {
@@ -65,21 +68,35 @@ img {
     border-radius: 50%;
     border: none;
     justify-content: center;
-    margin-top: -410px;
+    margin-top: -400px;
 }
 
-.content {
+.contentContainer {
     position: relative;
     display: flex;
     justify-content: center;
-    align-content: flex-end;
-    top: 550px;
+    width: 50%;
+    background-color: #F3EDED;
+    height: 800px;
+    margin-top: 74px;
+    left: 25%;
+    border-radius: 4px; 
+}
+
+.content {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 540px;
 }
 
 .content .users-name {
+    display: flex;
+    align-items: center;
     margin-top: -280px;
     font-size: 36px;
     color: rgba(26, 26, 26, 0.349);
+    margin-left: 32px;
 }
 
 .user-profile {
@@ -89,8 +106,13 @@ img {
     width: 1250px;
     height: 250px;
 }
+
 .network-content {
-    margin-top: -70px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+    left: -27%;
 }
 
 .network-text {
@@ -104,7 +126,7 @@ img {
     font-weight: bold;
     display: inline-block;
     padding: 10px 25px;
-    border-radius: 9px;
+    border-radius: 4px;
     margin: 10px 7px;
     border: none;
 }
@@ -115,6 +137,7 @@ img {
     width: auto;
     display: flex;
     justify-content: center;
+    top: -10px;
 }
 
 .bioTxt {
@@ -136,10 +159,10 @@ p {
     font-size: 50px;
     color: dodgerblue;
     top: 100px;
+    width: 300px;
 }
 
-
-hr {
+/* hr {
     position: absolute;
     height: 5px;
     background-color: rgba(30, 143, 255, 0.712);
@@ -148,7 +171,7 @@ hr {
     width: 80%;
     left: 10%;
     top: -80px;
-}
+} */
 
 button {
     position: absolute;
@@ -186,7 +209,3 @@ li .ft-right {
     text-decoration: none;
     color: white;
 }
-
-
-
-  
