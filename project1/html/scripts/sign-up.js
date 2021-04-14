@@ -1,3 +1,4 @@
+
 var submit = document.getElementById('signup-form');
 submit.addEventListener('submit', function(e){
     e.preventDefault();

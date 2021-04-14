@@ -56,6 +56,10 @@ body {
     top: 200px;
 }
 
+h1 {
+    color: rgba(66, 161, 255, 0.931);
+}
+
 p {
     position: relative;
     justify-content: center; 

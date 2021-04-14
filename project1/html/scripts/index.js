@@ -12,21 +12,21 @@ firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
 // Create account function-----------------------------
-// function writeUserData(userId, name, user_email, user_description) {
-//     firebase.database().ref('users/' + userId).set({
-//       username: name,
-//       email: user_email,
-//       description: user_description
-//     });
-// }
-// // store image function that store the user imgages
-// function storeUserImage(userId, pictureFile){
-//   firebase.storage().ref('users/' + userId + '/profile.jpg').put(pictureFile)
-//     .then(function(){
-//       console.log("Sucessfully upload picture");
-//     })
-//     .catch(function(error) { window.alert(error.message); });
-// }
+function writeUserData(userId, name, user_email, user_description) {
+    firebase.database().ref('users/' + userId).set({
+      username: name,
+      email: user_email,
+      description: user_description
+    });
+}
+// store image function that store the user imgages
+function storeUserImage(userId, pictureFile){
+  firebase.storage().ref('users/' + userId + '/profile.jpg').put(pictureFile)
+    .then(function(){
+      console.log("Sucessfully upload picture");
+    })
+    .catch(function(error) { window.alert(error.message); });
+}
 // function createAccount(){
 //     var name = document.getElementById("inputName").value;
 //     var description = document.getElementById("inputDescription").value;
@@ -129,49 +129,49 @@ function Authentication_checking(){
 //   });
 // }
 
-// function updateProfile(){
-//   var github = document.getElementById('github').value;
-//   var twitter = document.getElementById('twitter').value;
-//   var facebook = document.getElementById('facebook').value;
-//   var instagram = document.getElementById('instagram').value;
-//   var name = document.getElementById('inputName').value;
-//   var bio = document.getElementById('inputDescription').value;
-//   // This is the picture file from the edit-profile
-//   file = document.getElementById('picture-file').files[0];
+function updateProfile(){
+  var github = document.getElementById('github').value;
+  var twitter = document.getElementById('twitter').value;
+  var facebook = document.getElementById('facebook').value;
+  var instagram = document.getElementById('instagram').value;
+  var name = document.getElementById('inputName').value;
+  var bio = document.getElementById('inputDescription').value;
+  // This is the picture file from the edit-profile
+  file = document.getElementById('picture-file').files[0];
  
-//   console.log('name is ' + name);
-//   firebase.auth().onAuthStateChanged(function(user) {
-//     if (user) {
-//       // if user did not enter the website url
-//       // append the user's input to the end of the url
-//       // if user did not enter anything, database will save the value as website url without username (default value)
+  console.log('name is ' + name);
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      // if user did not enter the website url
+      // append the user's input to the end of the url
+      // if user did not enter anything, database will save the value as website url without username (default value)
 
-//       // example: user inputs "username" which does not include "github.com", therefore save value as
-//       // "https://www.github.com/" + "username"
+      // example: user inputs "username" which does not include "github.com", therefore save value as
+      // "https://www.github.com/" + "username"
       
-//       // example2: user enters full url of their profile like "https://github.com/username" 
-//       // since user input .includes "github.com" no change to the value is done
-//       if(!github.includes("github.com")) {
-//         github = "https://www.github.com/" + github;
-//       }
-//       if(!twitter.includes("twitter.com")) {
-//         twitter = "https://www.twitter.com/" + twitter;
-//       }
-//       if(!facebook.includes("facebook.com")) {
-//         facebook = "https://www.facebook.com/" + facebook;
-//       }
-//       if(!instagram.includes("instagram.com")) {
-//         instagram = "https://www.instagram.com/" + instagram;
-//       }
-//       console.log(facebook);
-//       updateSocialMedia(user.uid,name, bio, github, twitter, facebook, instagram);
-//       updateUserPic(user.uid, file);
-//       // window.location.href = 'result.html';
-//     } 
-//     else {
-//       // No user is signed in.
-//       console.log('No user is currently logged in');
-//     }
-//   });
-// }
+      // example2: user enters full url of their profile like "https://github.com/username" 
+      // since user input .includes "github.com" no change to the value is done
+      if(!github.includes("github.com")) {
+        github = "https://www.github.com/" + github;
+      }
+      if(!twitter.includes("twitter.com")) {
+        twitter = "https://www.twitter.com/" + twitter;
+      }
+      if(!facebook.includes("facebook.com")) {
+        facebook = "https://www.facebook.com/" + facebook;
+      }
+      if(!instagram.includes("instagram.com")) {
+        instagram = "https://www.instagram.com/" + instagram;
+      }
+      console.log(facebook);
+      updateSocialMedia(user.uid,name, bio, github, twitter, facebook, instagram);
+      updateUserPic(user.uid, file);
+      // window.location.href = 'result.html';
+    } 
+    else {
+      // No user is signed in.
+      console.log('No user is currently logged in');
+    }
+  });
+}
 

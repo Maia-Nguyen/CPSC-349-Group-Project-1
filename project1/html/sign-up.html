@@ -23,20 +23,19 @@
             </li>
         </ul>
     </nav>
-    <form class="form-horizontal">
+    <form class="form-horizontal" id = 'signup-form'>
         <p>Sign Up</p> 
-        <!-- <div class="control-group">
-            <label class="control-label pictureLabel" for="inputEmail">Add a picture </label><br>
-           
-            <input type="file" id="myfile" name="myfile" onchange="chooseFile(event)"><br><br>
-        </div> -->
         <div class="control-group">
+            <!-- <label class="control-label pictureLabel" for="inputEmail">Add a picture </label><br> -->
+           
+            <!-- <input type="file" id="myfile" name="myfile" onchange="chooseFile(event)"><br><br> -->
+        </div>
+        <!-- <div class="control-group">
             <label class="control-label" for="inputName">Name</label>
             <div class="controls">
-                <!-- Name Box -->
                 <input type="text" id="inputName" placeholder="Name" required>
             </div>
-        </div>
+        </div> -->
         <div class="control-group">
             <label class="control-label" for="inputEmail">Email</label>
             <div class="controls">
@@ -51,27 +50,27 @@
                 <input type="password" id="inputPassword" placeholder="Password" required>
             </div>
         </div>
-        <div class="control-group"> 
+        <!-- <div class="control-group"> 
             <label class="control-label" for="profilepic">Profile Picture </label>
-            <div class="controls">
+            <div class="controls"> -->
                 <!-- Profile Box -->
                 <!-- <input type ="file" onchange="uploadfile(this.file)"> -->
-                <input type="file" id="myfile" name="myfile" onchange="chooseFile(event)" required><br><br>
+                <!-- <input type="file" id="myfile" name="myfile" required><br><br> -->
                <!-- <hr>
                  <img id="imgUpload" src="" width="100vw"> -->
-            </div>
-        </div>
+            <!-- </div> -->
+        <!-- </div>
         <div class="control-group">
             <label class="control-label tellme" for="inputText">Tell Us Something About You!</label>
             <div class="controls">
                 <textarea name="" id="inputDescription" cols="60" rows="4" required></textarea>
             </div>
-        </div>
+        </div> -->
         <div class="control-group">
             <div class="controls">
-                <form>
-                    <input class ="createBtn" type="submit" onclick="createAccount()" value="Create Account"/>
-                </form>
+                <!-- <form> -->
+                    <input class ="createBtn" type="submit" value="Create Account"/>
+                <!-- </form> -->
             </div>  
         </div>
     </form>
@@ -92,7 +91,7 @@
        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
     
       <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+    <script src="scripts/sign-up.js"></script>
     <script src="scripts/index.js"></script>
-    <script src="scripts/result.js"></script>
 </body>
 </html>

@@ -17,7 +17,7 @@
     <form id='edit-profile-form' class="form-horizontal">
         <p>Edit Profile</p>
         <!-- USER ROFILE PIC, COMMENTED IT OUT FOR NOW -->
-        <!-- <img src="" alt="" id="user_profile_pic"> -->
+        <img src="profile-image/user1.png" alt="" id="user_profile_pic">
         <!-- <div class="control-group">
             <label class="control-label pictureLabel" for="inputEmail">Add a picture </label><br>
            
@@ -36,8 +36,8 @@
             <!-- UNCOMMENTED THE CODE BELOW TO SEE THE WHAT IF WE PUT THE LINK FIRST -->
             <div class="networks">
                 <div>GitHub URL</div>
+                <!-- <input type="text" id="github" placeholder="GitHub" value='https://github.com/'> -->
                 <input type="text" id="github" placeholder="https://github.com/">
-                <!-- <input type="text" id="github" placeholder="https://github.com/"> -->
             </div>
             <div class="networks">
                 <div>Twitter URL</div>
@@ -58,7 +58,7 @@
         <div class="control-group"> 
             <label class="control-label" id="profilepic" >Profile Picture </label>
             <div class="controls">
-                <input type="file" id="picture-file" name="myfile" required><br><br>
+                <input type="file" id="picture-file" onchange = 'change_profile_image()' name="myfile"><br><br>
             </div>
             <div class="colorGroup">
                 <label for="colorpicker">Choose your background color:</label>
@@ -99,6 +99,5 @@
       <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
     <script src="scripts/index.js"></script>
     <script src='scripts/edit-profile.js'></script>
-    <script src='scripts/result.js'></script>
 </body>
 </html>
