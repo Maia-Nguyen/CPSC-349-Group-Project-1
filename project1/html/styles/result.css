@@ -65,7 +65,20 @@ img {
     border-radius: 50%;
     border: none;
     justify-content: center;
-    margin-top: -410px;
+    margin-top: -500px;
+}
+
+.profileBox {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 684px;
+    height: 800px;
+    background-color: #ffffff;
+    left: 34%;
+    margin-top: 100px;
+    border-radius: 7px;
 }
 
 .content {
@@ -77,8 +90,10 @@ img {
 }
 
 .content .users-name {
-    margin-top: -280px;
+    margin-top: -375px;
+    text-align: center;
     font-size: 36px;
+    width: 500px;
     color: rgba(26, 26, 26, 0.349);
 }
 
@@ -90,14 +105,14 @@ img {
     height: 250px;
 }
 .network-content {
-    margin-top: -70px;
+    margin-top: -175px;
+    text-align: center;
 }
 
 .network-text {
     position: relative;
     justify-content: center;
     text-decoration: none;
-    left: 27%;
     background-color: rgba(66, 161, 255, 0.534);
     color: white;
     font-size: 20px;
@@ -118,17 +133,38 @@ img {
 }
 
 .bioTxt {
+    background-color: #F3EDED;
     position: absolute;
     display: flex;
-    width: auto;
-    height: auto;
+    width: 500px;
+    height: 250px;
     overflow: auto;
     padding: 15px 30px;
     margin-top: -70px;
     border-radius: 5px;
-    font-size: 30px;
-    color: rgba(26, 26, 26, 0.349);
+    font-size: 25px;
+    color: rgba(10, 10, 10, 0.561);
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 
 p {
     position: absolute;
