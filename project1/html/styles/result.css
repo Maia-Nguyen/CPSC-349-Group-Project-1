@@ -133,8 +133,7 @@ img {
 }
 
 .bioTxt {
-    background-color: #F3EDED;
-    position: absolute;
+    position: relative;
     display: flex;
     width: 500px;
     height: 250px;
@@ -143,7 +142,7 @@ img {
     margin-top: -70px;
     border-radius: 5px;
     font-size: 25px;
-    color: rgba(10, 10, 10, 0.561);
+    color: rgba(10, 10, 10, 0.349);
 }
 
 /* width */
