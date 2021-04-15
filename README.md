@@ -12,3 +12,12 @@ Get To Know Me was created using HTML, CSS, JavaScript, and Google’s Firebase 
 	Vinh Le – Database
 	Maia Nguyen – Team Lead, Database, and User Interface
   ```
+# Installation/Setup
+## Download the project:
+Requirements: Visual Studio Code and Live Server extension	
+1. Download the GitHub repository https://github.com/Maia-Nguyen/CPSC-349-Group-Project-1.git 
+2. Open the project in your Visual Studio Code
+3. Right click on index.html and click “Open with Live Server”
+4. Project should now run from your browser at localhost:XXXX (your port may vary)
+## View Our Project From Your Browser:
+1. Go to http://ecs.fullerton.edu/~cs349s3/  from your browser!
