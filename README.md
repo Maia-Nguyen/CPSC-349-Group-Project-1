@@ -6,7 +6,8 @@ Get To Know Me is a website where you could sum up what you're up to by sharing 
 Get To Know Me was created using HTML, CSS, JavaScript, and Google’s Firebase to store user data.
 
 ## Collaborators:
-```Marco Andrade – User Interface
+```
+	Marco Andrade – User Interface
 	Wesley Friday – Database
 	Vinh Le – Database
 	Maia Nguyen – Team Lead, Database, and User Interface
