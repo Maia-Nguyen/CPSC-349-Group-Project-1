@@ -13,6 +13,7 @@ Get To Know Me was created using HTML, CSS, JavaScript, and Google’s Firebase 
 	Maia Nguyen – Team Lead, Database, and User Interface
   ```
 # Installation/Setup
+How to run our project
 ## Download the project:
 Requirements: Visual Studio Code and Live Server extension	
 1. Download the GitHub repository https://github.com/Maia-Nguyen/CPSC-349-Group-Project-1.git 
