@@ -1,4 +1,4 @@
-# CPSC-349-Group-Project-1
+# Get To Know Me
 CPSC 349 Web Front End Engineering Group Project One: Full Stack Website
 
 ## About the Project
